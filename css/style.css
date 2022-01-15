@@ -256,3 +256,13 @@ body {
         margin-top: 1em;
     }
 }
+
+@media (max-width: 550px) {
+    .right__title__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left__buttons {
+        justify-content: center;
+    }
