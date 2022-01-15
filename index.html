@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <h1 class="main__title">SPLI TTER</h1>
+  <main class="main__container">
+    <div class="container__left">
+      <h2 class="left__title">Bill</h2>
+      <input type="text" name="bill" placeholder="0" class="left__input__bill">
+      <h2 class="left__title">Select Tip %</h2>
+      <div class="left__buttons">
+        <button class="left__button">5%</button>
+        <button class="left__button">10%</button>
+        <button class="left__button">15%</button>
+        <button class="left__button">25%</button>
+        <button class="left__button">50%</button>
+        <input type="text" name="custom" placeholder="Custom" class="left__input__custom">
+      </div>
+      <h2 class="left__title">Number of People</h2>
+      <input type="text" name="people" placeholder="0" class="left__input__people">
+    </div>
+    <div class="container__right">
+      <div class="right__title__container">
+        <div class="right__title__tip">
+          <h2 class="right__title">Tip Amount</h2>
+          <h3 class="right__title--min">/ person</h3>
+        </div>
+        <p class="tip">$0.00</p>
+      </div>
+      <div class="right__title__container">
+        <div class="right__title__tip">
+          <h2 class="right__title">Total</h2>
+          <h3 class="right__title--min">/ person</h3>
+        </div>
+        <p class="tip">$0.00</p>
+      </div>
+      <button class="right__reset__button">RESET</button>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+</body>
+
+</html>
