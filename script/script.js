@@ -12,9 +12,11 @@ for (let i = 0; i < tipPercentage.length; i++) {
         if (people.value === '0' || people.value === '') {
             let errorMessage = document.createElement('h2');
             errorMessage.className = 'left__title__error';
+            errorMessage.id = 'error__message';
             errorMessage.innerText = 'Can\'t be zero';
             if (displayError === false) {
                 document.getElementById("left__titles").appendChild(errorMessage);
+                people.style.border = '2px solid red';
                 displayError = true;
             }
         } else {
@@ -24,8 +26,8 @@ for (let i = 0; i < tipPercentage.length; i++) {
             tipCustom[0].classList.remove('left__button--selected');
             tipCustom[0].value = '';
             if (displayError) {
-                let errorMessage = document.getElementsByClassName('left__title__error');
-                document.getElementById('left__titles').removeChild(errorMessage[0]);
+                document.getElementById('error__message').remove();
+                people.style.border = '';
                 displayError = false;
             }
             let totalBill = Number(bill.value);
@@ -48,9 +50,11 @@ for (let i = 0; i < tipCustom.length; i++) {
         if (people.value === '0' || people.value === '') {
             let errorMessage = document.createElement('h2');
             errorMessage.className = 'left__title__error';
+            errorMessage.id = 'error__message';
             errorMessage.innerText = 'Can\'t be zero';
             if (displayError === false) {
                 document.getElementById("left__titles").appendChild(errorMessage);
+                people.style.border = '2px solid red';
                 displayError = true;
             }
         } else {
@@ -58,8 +62,8 @@ for (let i = 0; i < tipCustom.length; i++) {
                 tipPercentage[j].classList.remove('left__button--selected');
             }
             if (displayError) {
-                let errorMessage = document.getElementsByClassName('left__title__error');
-                document.getElementById('left__titles').removeChild(errorMessage[0]);
+                document.getElementById('error__message').remove();
+                people.style.border = '';
                 displayError = false;
             }
             let totalBill = Number(bill.value);
@@ -86,4 +90,9 @@ buttonReset.addEventListener('click', function () {
     }
     tipCustom[0].classList.remove('left__button--selected');
     tipCustom[0].value = '';
+    people.style.border = '';
+    if (displayError) {
+        document.getElementById('error__message').remove();
+        displayError = false;
+    }
 })

@@ -110,6 +110,12 @@ body {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 10px;
+    border-radius: 5px;
+}
+
+.left__input__bill:focus {
+    outline: 2px solid var(--light-green);
+    border-radius: 5px;
 }
 
 .left__buttons {
@@ -180,6 +186,11 @@ body {
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 10px;
+    border-radius: 5px;
+}
+
+.left__input__people:focus {
+    outline: 2px solid var(--light-green);
     border-radius: 5px;
 }
 
