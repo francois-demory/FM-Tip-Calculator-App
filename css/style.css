@@ -42,7 +42,6 @@ body {
 .main__container {
     background-color: white;
     width: 50vw;
-    height: 40vh;
     display: flex;
     flex-direction: row;
     border-radius: 20px;
@@ -110,14 +109,14 @@ body {
 .left__button {
     border: none;
     background-color: var(--dark-green);
-    padding: 0.5em 0;
+    padding: 0.25em 1.5em;
     margin: 0.15em;
     font-size: 1.2em;
     font-family: var(--main-font);
     border-radius: 5px;
-    width: 110px;
     font-weight: 700;
     color: white;
+    width: 90px;
 }
 
 .left__button:hover {
@@ -130,12 +129,12 @@ body {
     background-color: var(--light-gray);
     color: var(--dark-green);
     border: none;
-    padding: 0.5em 0;
+    padding: 0.25em 1.25em;
     margin: 0.15em;
-    font-size: 1em;
+    width: 90px;
+    font-size: 0.9em;
     font-family: var(--main-font);
     border-radius: 5px;
-    width: 110px;
     font-weight: 700;
     text-align: center;
     border-radius: 5px;
@@ -149,7 +148,7 @@ body {
 
 .left__input__people {
     border: none;
-    padding: 0.5em;
+    padding: 0.25em 1.25em;
     background-color: var(--light-gray);
     width: 100%;
     margin-bottom: 1em;
@@ -198,6 +197,6 @@ body {
 
 .tip {
     color: var(--light-green);
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 700;
 }
