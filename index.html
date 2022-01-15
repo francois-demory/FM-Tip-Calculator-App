@@ -15,18 +15,20 @@
   <main class="main__container">
     <div class="container__left">
       <h2 class="left__title">Bill</h2>
-      <input type="text" name="bill" placeholder="0" class="left__input__bill">
+      <input id="bill" type="text" name="bill" placeholder="0" class="left__input__bill">
       <h2 class="left__title">Select Tip %</h2>
       <div class="left__buttons">
-        <button class="left__button">5%</button>
-        <button class="left__button">10%</button>
-        <button class="left__button">15%</button>
-        <button class="left__button">25%</button>
-        <button class="left__button">50%</button>
+        <button class="left__button" value="5">5%</button>
+        <button class="left__button" value="10">10%</button>
+        <button class="left__button" value="15">15%</button>
+        <button class="left__button" value="25">25%</button>
+        <button class="left__button" value="50">50%</button>
         <input type="text" name="custom" placeholder="Custom" class="left__input__custom">
       </div>
-      <h2 class="left__title">Number of People</h2>
-      <input type="text" name="people" placeholder="0" class="left__input__people">
+      <div id="left__titles" class="left__titles">
+        <h2 class="left__title">Number of People</h2>
+      </div>
+      <input id="people" type="text" name="people" placeholder="0" class="left__input__people">
     </div>
     <div class="container__right">
       <div class="right__title__container">
@@ -34,22 +36,23 @@
           <h2 class="right__title">Tip Amount</h2>
           <h3 class="right__title--min">/ person</h3>
         </div>
-        <p class="tip">$0.00</p>
+        <p id="tipAmount" class="tip">$0.00</p>
       </div>
       <div class="right__title__container">
         <div class="right__title__tip">
           <h2 class="right__title">Total</h2>
           <h3 class="right__title--min">/ person</h3>
         </div>
-        <p class="tip">$0.00</p>
+        <p id="totalPerson" class="tip">$0.00</p>
       </div>
-      <button class="right__reset__button">RESET</button>
+      <button id="reset__button" class="right__reset__button">RESET</button>
     </div>
   </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./script/script.js"></script>
 
 </body>
 

@@ -3,6 +3,7 @@
 :root {
     --dark-green: #00494D;
     --light-green: #26C2AE;
+    --light-blue: #9FE8DF;
     --light-gray: #F3F8FB;
     --main-font: 'Space Mono', monospace;
     --title-color: #5E7A7D;
@@ -81,6 +82,19 @@ body {
     font-weight: bold;
 }
 
+.left__title__error {
+    margin-bottom: 0.5em;
+    font-family: var(--main-font);
+    color: #CE8771;
+    font-weight: bold;
+}
+
+.left__titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .left__input__bill {
     border: none;
     padding: 0.5em;
@@ -120,7 +134,7 @@ body {
 }
 
 .left__button:hover {
-    background-color: var(--light-green);
+    background-color: var(--light-blue);
     color: var(--dark-green);
     transition: all 0.5s ease-in-out;
 }
@@ -138,6 +152,11 @@ body {
     font-weight: 700;
     text-align: center;
     border-radius: 5px;
+}
+
+.left__button--selected {
+    background-color: var(--light-green);
+    color: var(--dark-green);
 }
 
 .left__input__custom::placeholder,
@@ -193,6 +212,12 @@ body {
     font-size: 1em;
     font-weight: 700;
     color: var(--dark-green);
+}
+
+.right__reset__button:hover {
+    background-color: var(--light-blue);
+    color: var(--dark-green);
+    transition: all 0.5s ease-in-out;
 }
 
 .tip {
