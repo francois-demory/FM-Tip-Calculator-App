@@ -257,6 +257,12 @@ body {
     }
 }
 
+@media (max-width: 620px) {
+    body {
+        height: auto;
+    }
+}
+
 @media (max-width: 550px) {
     .right__title__container {
         flex-direction: column;
@@ -266,3 +272,4 @@ body {
     .left__buttons {
         justify-content: center;
     }
+}
